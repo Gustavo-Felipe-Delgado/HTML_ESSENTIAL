@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        body{
+            margin: 0;
+            text-align: center;
+        }
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a example of image in HTML!</h1>
+
+    <!-- Essa imagem está em sua qualidade padrão-->
+    <picture>
+        <source media="(max-width: 600px)"
+                srcset="../imgs/dogs-square-400.png,
+                        ../imgs/dogs-square-800.png 2x">
+        <source media="(min-width: 601px)"
+                srcset="../imgs/dogs-800x500.png,
+                        ../imgs/dogs-1600x1000.png 2x">
+        <img src="../imgs/dogs-800x500.png" 
+             alt="a group of dogs running over the lawn."
+             class="responsive">
+    </picture>
+
+
+</body>
+</html>
