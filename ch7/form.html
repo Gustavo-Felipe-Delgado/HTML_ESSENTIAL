@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple <Form></Form></title>
+</head>
+<body>
+
+    <form action="submit.html" method="get">
+        <h2>Create an account</h2>
+        <div>
+            <label for="email">Email</label>
+            <Input id="email" type="email" name="email"
+                   required placeholder="email@email.com"
+                   pattern="[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]+">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password"
+                   required placeholder="8 character minimum"
+                   minlength="8">
+        </div>
+        <div>
+            <input type="checkbox" id="newsletter" name="newsletter"
+                   value = "subscribe" checked>
+            <label for="newsletter">Yes! Send me news.</label>
+        </div>
+        <fieldset>
+            <legend>Choose the newsletter frequency</legend>
+            <div>
+                <input type="radio" name="frequency" id="frequency"
+                       value="weekly">
+                <label for="frequency">Weekly</label>
+            </div>
+            <div>
+                <input type="radio" name="frequency" id="frequency"
+                       value="monthly">
+                <label for="frequency">Monthly</label>
+            </div>
+        </fieldset>
+        <button type="submit">Create account</button>
+    </form>
+    
+</body>
+</html>
